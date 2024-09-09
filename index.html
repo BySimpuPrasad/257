@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#202020" />
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>LineUp</title>
+</head>
+
+<body>
+
+  <div class="nav" id="nav">
+    <div id="searchArea"><input placeholder="Search..." type="text" id="searchBar" oninput="searchHere(this)">
+      <div class="closeSA" onclick="searchArea.classList.remove('active')"><i style="font-size:30px;" class="fa fa-close"></i></div>
+    </div>
+    <div class="logo"></div>
+    <div class="searchBTN" onclick="searchArea.classList.add('active')"><i class="fa fa-search"></i></div>
+  </div>
+  <div class="stickyBar">
+    <div id="shareArea">
+      <div class="shareList">
+        <a href="javascript: alert('Unable to support')"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        <a href="javascript: alert('Unable to support')"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="javascript: alert('Unable to support')"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+        <a href="javascript: alert('Unable to support')"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+        <a href="javascript: alert('Unable to support')"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="javascript:copytext()"><i class="fa fa-link" aria-hidden="true"></i></a>
+      </div>
+      <div class="closeShA" onclick="shareArea.classList.remove('active')"><i style="font-size:30px;" class="fa fa-close"></i></div>
+    </div>LineUp > Home <button onclick="shareArea.classList.add('active')" class="shareBtn"><i class="fa fa-share-alt"></i></button>
+  </div>
+
+  <div id="dataHolder" class="dataholder">
+
+    <div class="book">
+      <div class="listContent">
+        <h3>Beautifull Color leaf</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzSel8a5GFV1PP4YhJYUPlJ9tbB0QdDfXPsDdNUGod8Y6JNyJoePW3at4&s=10" alt="none">A beautiful colorfull leaf.
+      </div><a href="" class="listLinks">Visit</a>
+    </div>
+
+    <div class="book">
+      <div class="listContent">
+        <h3>A crazy cat</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRQX1u4sgmT2fWZDxCImitYjTJLCssvz01wmbwZd4b0fE5ilXRdQ6LDOB&s=10" alt="">A crazy cat sitting on sofa.
+      </div><a href="" class="listLinks">Visit</a>
+    </div>
+
+    <div class="book">
+      <div class="listContent">
+        <h3>A crazy cat</h3><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYRQX1u4sgmT2fWZDxCImitYjTJLCssvz01wmbwZd4b0fE5ilXRdQ6LDOB&s=10" alt="">A crazy cat sitting on sofa.
+      </div><a href="" class="listLinks">Visit</a>
+    </div>
+
+
+  </div>
+  <div class="footer">
+    <div class="light"><span></span></div><i>created by <span style="color:aqua;">simpu_kumar_prasad</span></i><br><b style="color: #999999;">Released under github pages.</b>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
