@@ -90,7 +90,7 @@ a {
 }
 
 .nav>.logo {
-  background: url('https://raw.githubusercontent.com/BySimpuPrasad/257/main/lineuplogo.png');
+  background: url('lineuplogo.png');
   background-size: cover;
   background-position: center;
   width: 100px;
