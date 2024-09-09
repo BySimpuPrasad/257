@@ -90,8 +90,7 @@ a {
 }
 
 .nav>.logo {
-  --background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgNwECvn3j-27Tuu7Cud2iq6pH3rCSb-dQu2fV1nqUzRjF-A5zV3VT0_FTu3ll7xsYSgF08Cil0Ds6EOKZwiNXbxGNN6PKnk8dQr_jmwJgchqpdwsFCcH0RTxyM8_zWhf_bKduUrowG2LI2Xf9_xcvVOGXLXyd8vAGUArfoEeNy8eTG0vtWX3k0hYgAJw/s320/Picsart_24-09-08_23-21-12-128.png');
-  background: url('https://raw.githubusercontent.com/BySimpuPrasad/2570/main/lineuplogo.png');
+  background: url('lineuplogo.png');
   background-size: cover;
   background-position: center;
   width: 100px;
