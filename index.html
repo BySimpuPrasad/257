@@ -12,10 +12,10 @@
 </head>
 
 <body>
-
+<div class="bgackgroundImg"><video class="backgroundVideo" width="320" height="240" autoplay muted loop><source src="none" type="video/mp4"></video></div>
   <div class="nav" id="nav">
     <div id="searchArea"><input placeholder="Search..." type="text" id="searchBar" oninput="searchHere(this)">
-      <div class="closeSA" onclick="searchArea.classList.remove('active')"><i style="font-size:30px;" class="fa fa-close"></i></div>
+      <div class="closeSA" onclick="searchArea.classList.remove('active');"><i style="font-size:30px;" class="fa fa-close"></i></div>
     </div>
     <div class="logo"></div>
     <div class="searchBTN" onclick="searchArea.classList.add('active')"><i class="fa fa-search"></i></div>
@@ -31,7 +31,7 @@
         <a href="javascript:copytext()"><i class="fa fa-link" aria-hidden="true"></i></a>
       </div>
       <div class="closeShA" onclick="shareArea.classList.remove('active')"><i style="font-size:30px;" class="fa fa-close"></i></div>
-    </div>LineUp > Home <button onclick="shareArea.classList.add('active')" class="shareBtn"><i class="fa fa-share-alt"></i></button>
+    </div><span class="navList">LineUp > Home </span><button onclick="shareArea.classList.add('active')" class="shareBtn"><i class="fa fa-share-alt"></i></button>
   </div>
 
   <div id="dataHolder" class="dataholder">

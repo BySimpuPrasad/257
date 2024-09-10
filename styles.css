@@ -15,15 +15,39 @@
 :root {
   --bgColor: #202020;
   --borderColor: #48464F;
+
+  --listBG: #ffffff10;
+  --blurFilter: none;
 }
 
 body {
   width: 100%;
   color: white;
-  background: var(--bgColor);
+  background: #121212;
 
 }
 
+.bgackgroundImg {
+  background: var(--bgColor);
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.backgroundVideo {
+  display: none;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: auto;
+  object-fit: cover;
+}
 
 a {
   text-decoration: none;
@@ -63,6 +87,7 @@ a {
 .nav #searchArea.active {
   opacity: 1;
   pointer-events: auto;
+  backdrop-filter: var(--blurFilter);
 }
 
 .nav #searchArea input {
@@ -105,6 +130,7 @@ a {
 
 .stickyBar {
   background: var(--bgColor);
+  height:40px;
   padding: 10px 20px;
   border-bottom: 1px solid black;
   position: sticky;
@@ -128,6 +154,21 @@ a {
   background: none;
   color: white;
   font-size: 20px;
+  backdrop-filter: var(--blurFilter);
+}
+
+.stickyBar > .navList{
+  position: absolute;
+  top:0;
+  left:0;
+  display:block;
+  height:100%;
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:left;
+  padding-left:10px;
+  backdrop-filter: var(--blurFilter);
 }
 
 .stickyBar>#shareArea {
@@ -149,6 +190,7 @@ a {
 
 .stickyBar>#shareArea.active {
   transform: none;
+  backdrop-filter: var(--blurFilter);
 }
 
 .stickyBar>#shareArea>.shareList {
@@ -200,6 +242,7 @@ a {
   padding-top: 30px;
   text-align: center;
   position: relative;
+  backdrop-filter: var(--blurFilter);
 }
 
 .footer>.light {
@@ -250,7 +293,7 @@ a {
   border: none;
   border-radius: 10px;
   padding: 10px;
-  background: #ffffff10;
+  background: var(--listBG);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -274,7 +317,7 @@ a {
 .book>.listLinks {
   margin-top: 5px;
   display: block;
-  background: #ffffff10;
+  background: var(--listBG);
   width: 100%;
   padding: 5px;
   border-radius: 10px;
