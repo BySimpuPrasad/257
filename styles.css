@@ -13,11 +13,11 @@
 }
 
 :root {
-  --bgColor: #202020;
+  --bgColor: #20202000;
   --borderColor: #48464F;
 
   --listBG: #ffffff10;
-  --blurFilter: none;
+  --blurFilter: blur(10px);
 }
 
 body {
@@ -28,7 +28,7 @@ body {
 }
 
 .bgackgroundImg {
-  background: var(--bgColor);
+  background: var(--bgColor) radial-gradient(circle at 0% 0%, #101546, black);
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -63,7 +63,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid black;
+  border:none;
   box-shadow: 0px 3px 2px 0px #00000050;
   z-index: 1;
 }
@@ -132,7 +132,7 @@ a {
   background: var(--bgColor);
   height:40px;
   padding: 10px 20px;
-  border-bottom: 1px solid black;
+  border: none;
   position: sticky;
   left: 0;
   top: 0;
@@ -200,9 +200,15 @@ a {
   justify-content: space-around;
   padding: 0px 10px;
 }
-
+.stickyBar>#shareArea>.shareList>span {
+display: inline-block;
+width:100%;
+text-align: left;
+padding: 0px 5px;
+}
 .stickyBar>#shareArea>.shareList>a {
   color: white;
+  padding: 1px 10px;
 }
 
 .stickyBar>#shareArea>.shareList>a:active {
