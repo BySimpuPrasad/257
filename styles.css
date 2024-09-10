@@ -28,7 +28,7 @@ body {
 }
 
 .bgackgroundImg {
-  background: var(--bgColor) radial-gradient(circle at 0% 0%, #101546, black);
+  background: var(--bgColor) radial-gradient(circle at 0% 0%, #055C4A, #000219);
   background-position: center;
   background-size: cover;
   position: fixed;
@@ -63,7 +63,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border:none;
+  border: none;
   box-shadow: 0px 3px 2px 0px #00000050;
   z-index: 1;
 }
@@ -88,6 +88,8 @@ a {
   opacity: 1;
   pointer-events: auto;
   backdrop-filter: var(--blurFilter);
+  -webkit-backdrop-filter: var(--blurFilter);
+  -moz-backdrop-filter: var(--blurFilter);
 }
 
 .nav #searchArea input {
@@ -130,7 +132,7 @@ a {
 
 .stickyBar {
   background: var(--bgColor);
-  height:40px;
+  height: 40px;
   padding: 10px 20px;
   border: none;
   position: sticky;
@@ -155,20 +157,24 @@ a {
   color: white;
   font-size: 20px;
   backdrop-filter: var(--blurFilter);
+  -webkit-backdrop-filter: var(--blurFilter);
+  -moz-backdrop-filter: var(--blurFilter);
 }
 
-.stickyBar > .navList{
+.stickyBar>.navList {
   position: absolute;
-  top:0;
-  left:0;
-  display:block;
-  height:100%;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
   width: 100%;
-  display:flex;
-  align-items:center;
-  justify-content:left;
-  padding-left:10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 10px;
   backdrop-filter: var(--blurFilter);
+  -webkit-backdrop-filter: var(--blurFilter);
+  -moz-backdrop-filter: var(--blurFilter);
 }
 
 .stickyBar>#shareArea {
@@ -191,6 +197,8 @@ a {
 .stickyBar>#shareArea.active {
   transform: none;
   backdrop-filter: var(--blurFilter);
+  -webkit-backdrop-filter: var(--blurFilter);
+  -moz-backdrop-filter: var(--blurFilter);
 }
 
 .stickyBar>#shareArea>.shareList {
@@ -200,12 +208,14 @@ a {
   justify-content: space-around;
   padding: 0px 10px;
 }
+
 .stickyBar>#shareArea>.shareList>span {
-display: inline-block;
-width:100%;
-text-align: left;
-padding: 0px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 0px 5px;
 }
+
 .stickyBar>#shareArea>.shareList>a {
   color: white;
   padding: 1px 10px;
@@ -249,6 +259,8 @@ padding: 0px 5px;
   text-align: center;
   position: relative;
   backdrop-filter: var(--blurFilter);
+  -webkit-backdrop-filter: var(--blurFilter);
+  -moz-backdrop-filter: var(--blurFilter);
 }
 
 .footer>.light {
