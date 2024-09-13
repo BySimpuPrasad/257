@@ -298,6 +298,18 @@ a {
   background: linear-gradient(90deg, transparent, aqua 30%, aqua 70%, transparent);
   animation: bulb 5s linear 0s infinite normal;
 }
+.footer >.lincLinks{
+  margin-top:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.footer >.lincLinks > a{
+  display: inline-block;
+  font-weight: bold;
+  color: blueviolet;
+  margin:20px;
+}
 
 @keyframes bulb {
   0% {
