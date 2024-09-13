@@ -372,3 +372,24 @@ a {
   text-align: center;
   font-weight: bold;
 }
+
+/* OTHERS */
+.mainpage{
+  display: block;
+  color: white;
+  padding: 5px;
+  width:100%;
+  height: 100%;
+  font-size: 1em;
+}
+.mainpage > h3{
+  display: block;
+  width:100%;
+}
+.mainpage > hr{
+  border:none;
+  width:100%;
+  background: white;
+  height: 2px;
+  margin-bottom: 10px;
+}
