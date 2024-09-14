@@ -389,7 +389,7 @@ a {
   width: 95%;
   height: 95%;
   border-radius: 10px;
-  border: 2px solid red;
+  border: 2px solid aqua;
   overflow: hidden;
   align-items: center;
   justify-content: flex-start;
@@ -420,8 +420,10 @@ a {
   right: 0;
   width: 30px;
   height: 30px;
-  border: none;
+  border: 2px solid aqua;
+  border-top:none;
+  border-right:none;
   border-radius: 0px 0px 0px 10px;
-  background: red;
-  color: white;
+  background: none;
+  color: aqua;
 }
