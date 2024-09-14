@@ -386,8 +386,8 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
   background: #000000e0;
-  width: 90%;
-  height: 90%;
+  width: 95%;
+  height: 95%;
   border-radius: 10px;
   border: 2px solid red;
   overflow: hidden;
