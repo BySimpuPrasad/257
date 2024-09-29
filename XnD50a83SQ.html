@@ -142,6 +142,15 @@
     #day {}
 
     #datex {}
+
+    #IamFrame {
+      position: absolute;
+      width: 80%;
+      height: 50vh;
+      border: none;
+      border-radius: 10px;
+      color: white;
+    }
   </style>
 </head>
 
@@ -154,6 +163,7 @@
       <div id="datex">00/00/0000</div>
     </div>
   </div>
+  <iframe id="IamFrame" src="http://www.bing.com/search?q=Bing" frameborder="0"></iframe>
   <div class="widgetsbox">
     <a href="https://youtube.in" target="_blank" class="widgets"><img src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="youtube"><span>youtube</span></a>
     <a href="https://www.google.com" target="_blank" class="widgets"><img style="width:70%;" src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-1024.png" alt="google"><span>google</span></a>
@@ -161,7 +171,7 @@
     <a href="https://play.google.com/store/apps?utm_source=apac_med&hl=en-IN&utm_medium=hasem&utm_content=Jan0324&utm_campaign=Evergreen&pcampaignid=MKT-EDR-apac-in-1707570-med-hasem-ap-Evergreen-Jan0324-Text_Search_BKWS-BKWS%7CONSEM_kwid_43700080180558774_creativeid_683321779188_device_m&gad_source=1&gclid=CjwKCAjw0t63BhAUEiwA5xP54Rc7B_joqC1jp7z1F8cTAB6PTD4lzBq67NGTwz-1M7UGRu7_dr-e1RoCD5QQAvD_BwE&gclsrc=aw.ds" class="widgets"><img style="width:45%;" src="https://cdn-icons-png.flaticon.com/512/300/300218.png" alt="playstore"><span>playstore</span></a>
     <a href="https://mcpedl.com/?s=Mods" class="widgets"><img src="https://www.meme-arsenal.com/memes/a158c04502a1693de1a8c8389550023b.jpg" style="width:45%;" alt="minecraft"><span>minecraft</span></a>
   </div>
-  <div class="searchBar"><input placeholder="Search..." type="text" id="search"><button onclick="searchData()" class="searchbtn"><i class="fa fa-search"></i></button></div>
+  <div class="searchBar"><input oninput="relodIamFrame(this)" placeholder="Search..." type="text" id="search"><button onclick="searchData()" class="searchbtn"><i class="fa fa-search"></i></button></div>
   <script>
     function searchData() {
       window.location.href = `http://www.google.com/search?q=${search.value}`
@@ -184,6 +194,11 @@
         searchData();
       }
     });
+
+    function relodIamFrame() {
+      IamFrame.src = `http://www.bing.com/search?q=${search.value}`;
+      IamFrame.contentDocument.location.reload(true);
+    }
   </script>
 </body>
 
